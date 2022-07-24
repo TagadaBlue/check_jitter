@@ -90,7 +90,7 @@ If one ping did not success it will wait a second and try again.
 
 
 def handle_threshold(value, threshold):
-    if threshold is "":
+    if threshold == "":
         return ""
     threshold = threshold.strip()
     m = re.search('^(@|~)?(\d*)(:)?(\d*)$', threshold, re.M)
